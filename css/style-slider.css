@@ -1,0 +1,59 @@
+
+.image-gallery {
+  	display: flex;
+    flex-flow: column wrap;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.image-gallery section {
+    display: none;
+    margin-left: 0px;
+	width: 73%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.image-gallery section img {
+    height: auto;
+    width: 100%;
+	max-width:720px;
+    border-radius: 10px;
+}
+
+.image-gallery input {
+  display: none;
+}
+.sliderComprar{
+    max-height: 500px;
+}
+.image-gallery label {
+
+    margin: 0px 0px 10px 20px;
+    padding: 5px;
+    text-align: center;
+    width: 17.2%;
+}
+.image-gallery label:hover {
+  cursor: pointer;
+}
+
+.image-gallery label img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+.image-gallery input:checked + label {
+
+  padding: 5px;
+}
+
+.image-gallery #tab1:checked ~ #content1,
+.image-gallery #tab2:checked ~ #content2,
+.image-gallery #tab3:checked ~ #content3, 
+.image-gallery #tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media only screen and (min-width:240px) and (max-width: 768px){
+	
+}
